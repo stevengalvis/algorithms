@@ -1,17 +1,20 @@
 function checkPalindrome(inputString) {
-  console.log(inputString);
-strArr = inputString.split('');
-console.log(strArr);
-  let reverse = [];
-for (let i = strArr.length-1; i >= 0; i--) {
-  console.log(strArr[i]);
+  //turn string into an array
+    strArr = inputString.split('');
 
-  reverse.push(strArr[i]);
+    //reverse the string
+    let reverse = [];
+    for (let i = strArr.length-1; i >= 0; i--) {
+      reverse.push(strArr[i]);
+
+  }
+  
+  let reverseStr = reverse.join("");
+
+  //check for Palindrome
+  return reverseStr === inputString;
+
+
 }
-let reverseStr = reverse.toString(' ');
-console.log(reverseStr);
 
-
-}
-
-checkPalindrome('noon');
+checkPalindrome('barkley');
