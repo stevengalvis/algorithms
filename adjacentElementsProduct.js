@@ -9,6 +9,17 @@ function adjacentElementsProduct(inputArray) {
 
     for (let i = 0; i < inputArray.length; i++) {
 
+
+      if (inputArray[i-1] * inputArray[i] > product) {
+        product = inputArray[i-1] * inputArray[i];
+      }
+
+      if   if (inputArray[i+1] * inputArray[i] > product) {
+          product = inputArray[i+1] * inputArray[i];
+        }
+
+
+
       if (inputArray[i] > highestNum) {
         console.log(inputArray[i]);
         highestNum = inputArray[i];
@@ -18,4 +29,4 @@ function adjacentElementsProduct(inputArray) {
     console.log(product);
 }
 inputArray = [3, 6, -2, -5, 7, 3];
-adjacentElementsProduct(inputArray);
+adjacentElementsProduct(inputArrmm;
